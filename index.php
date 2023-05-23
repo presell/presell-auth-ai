@@ -67,7 +67,7 @@ p#para {
   window.fbAsyncInit = function() {
     console.log('got here');
     FB.init({
-      appId      : '188847487430541',
+      appId      : '486102900384615',
       cookie     : true,
       xfbml      : true,
       version    : 'v16.0'
