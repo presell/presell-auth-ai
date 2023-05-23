@@ -13,20 +13,20 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <!-- Facebook Pixel Code -->
 <script>
-!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-document,'script','https://connect.facebook.net/en_US/fbevents.js');
-// Insert Your Facebook Pixel ID below. 
-fbq('init', '475349521435426');
-fbq('track', 'PageView');
+// !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+// n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+// n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+// t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+// document,'script','https://connect.facebook.net/en_US/fbevents.js');
+// // Insert Your Facebook Pixel ID below. 
+// fbq('init', '475349521435426');
+// fbq('track', 'PageView');
 
-fbq('track', 'Search', { 
-  search_string: 'Business',
-  content_ids: ['6003402305839', '6003248297213', '6004037932409', '6002840040679','6002884511422','6003165841322'], // top 5-10 search results
-  content_type: 'Business'
-});
+// fbq('track', 'Search', { 
+//   search_string: 'Business',
+//   content_ids: ['6003402305839', '6003248297213', '6004037932409', '6002840040679','6002884511422','6003165841322'], // top 5-10 search results
+//   content_type: 'Business'
+// });
 </script>
 <!-- End Facebook Pixel Code -->
 <style>
@@ -187,29 +187,29 @@ p#para {
 <?php
 // connect to Facebook Meta Marketing API code
 
-$accessToken = '188847487430541|reK5fITs5LX2ELVCx19I6kVBMa4';
-$endpoint = 'https://graph.facebook.com/search?type=adinterest&q=[Business]&limit=1000&locale=en_US&access_token=' . $accessToken;
+// $accessToken = '188847487430541|reK5fITs5LX2ELVCx19I6kVBMa4';
+// $endpoint = 'https://graph.facebook.com/search?type=adinterest&q=[Business]&limit=1000&locale=en_US&access_token=' . $accessToken;
 
-$curl = curl_init($endpoint);
+// $curl = curl_init($endpoint);
 
-// Set cURL options
-curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+// // Set cURL options
+// curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 
-// Execute the request
-$response = curl_exec($curl);
+// // Execute the request
+// $response = curl_exec($curl);
 
-// Check for errors
-if(curl_errno($curl)) {
-    $error = curl_error($curl);
-    // Handle the error appropriately
-} else {
-    // Process the response
-    $responseData = json_decode($response, true);
-    echo "<pre>";
-    print_r($responseData); echo "</pre>";
-    // Handle the response data
-}
+// // Check for errors
+// if(curl_errno($curl)) {
+//     $error = curl_error($curl);
+//     // Handle the error appropriately
+// } else {
+//     // Process the response
+//     $responseData = json_decode($response, true);
+//     echo "<pre>";
+//     print_r($responseData); echo "</pre>";
+//     // Handle the response data
+// }
 
-// Close cURL
-curl_close($curl);
-?>
+// // Close cURL
+// curl_close($curl);
+// ?>
